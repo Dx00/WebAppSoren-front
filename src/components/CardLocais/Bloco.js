@@ -21,7 +21,7 @@ class Bloco extends Component {
 
 
     renderPlaces = async() => {
-        let dados = await axios.get('http://localhost:3009/dados')
+        let dados = await axios.get('https://websorenapp-backend.herokuapp.com/dados')
         
         let resposta = [dados.data.response][0]
 
